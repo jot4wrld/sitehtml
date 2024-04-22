@@ -1,0 +1,36 @@
+body{
+    background-image: url(img/image.png);
+    background-repeat: no-repeat;
+    background-color: #10141b;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    height: 100px;
+    padding: 0 20px; /* Adiciona um espaçamento interno à esquerda e à direita */
+}
+.topico {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.topico li {
+    margin-left: 20px; /* Adiciona um espaçamento entre os itens */
+}
+
+
+.topico li a {
+    text-decoration: none; 
+    color: #fff;
+    transition: color 1s ease;
+}
+
+.topico li a:hover {
+    color: #e4c44c;
+}

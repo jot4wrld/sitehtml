@@ -1,0 +1,201 @@
+body {
+    color: #fff;
+    background-color: #10141B;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(img/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin: 0;
+}
+
+#grade {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main-saiba-mais"
+        "main-filmes"
+        "main-personagens"
+        "footer";
+    grid-template-rows: auto auto auto auto auto auto; /* Definindo a altura das linhas */
+    gap: 20px; /* Espaçamento entre as áreas */
+    padding: 20px; /* Espaçamento interno */
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    height: 100px;
+    padding: 0 20px; /* Adiciona um espaçamento interno à esquerda e à direita */
+}
+
+.topico {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.topico li {
+    margin-left: 20px; /* Adiciona um espaçamento entre os itens */
+}
+
+.topico li a {
+    text-decoration: none; 
+    color: #fff;
+    transition: color 1s ease;
+}
+
+.topico li a:hover {
+    color: #e4c44c;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+}
+
+#main-saiba-mais {
+    grid-area: main-saiba-mais;
+}
+
+#main-filmes {
+    grid-area: main-filmes;
+}
+
+#main-personagens {
+    grid-area: main-personagens;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exibe 3 personagens por linha */
+    gap: 20px; /* Espaçamento entre os personagens */
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona espaço abaixo de cada linha de personagens */
+}
+
+.photo-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photo-item {
+    width: calc(25% - 10px);
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.photo-item a {
+    text-decoration: none;
+    color: #fff; 
+    transition: color 1s ease; 
+}
+
+.photo-item a:hover {
+    color: #e4c44c; 
+}
+
+.caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+
+#subtitulo{
+    text-align: center;
+    place-items:center;
+
+}
+
+
+.personagens-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.personagens-lista li img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.personagens-lista li p {
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.personagem p {
+    margin: 0;
+}
+
+.personagem img {
+    width: 200px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-links li {
+    margin-right: 30px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.social-links img {
+    width: 50px;
+}
+
+.textosocial {
+    font-size: 12px;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.footer p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.footer p:first-child {
+    margin-top: 0;
+}
